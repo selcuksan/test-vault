@@ -4,7 +4,7 @@ metadata:
   name: test
   namespace: argocd
 spec:
-  host: https://test.apps.didak6.tbtk.gov.tr
+  host: test.apps.didak6.tbtk.gov.tr
   path: /
   to:
     kind: Service
