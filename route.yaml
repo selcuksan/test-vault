@@ -1,0 +1,25 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: test
+  namespace: argocd
+spec:
+  host: https://test.apps.didak6.tbtk.gov.tr
+  path: /
+  to:
+    kind: Service
+    name: argocd-sample-server
+    weight: 100
+  port:
+    targetPort: 8083
+  tls:
+    termination: edge
+    certificate: |-
+      -----BEGIN CERTIFICATE-----
+      -----END CERTIFICATE-----
+    key: |-
+      -----BEGIN PRIVATE KEY-----
+      -----END PRIVATE KEY-----
+    insecureEdgeTerminationPolicy: Allow
+  wildcardPolicy: None
+ 
