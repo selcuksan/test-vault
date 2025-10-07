@@ -3,6 +3,8 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: test
   namespace: argocd
+  annotations:
+    avp.kubernetes.io/path: "kv/data/test"
 spec:
   host: test.apps.didak6.tbtk.gov.tr
   path: /
@@ -14,12 +16,8 @@ spec:
     targetPort: 8083
   tls:
     termination: edge
-    certificate: |-
-      -----BEGIN CERTIFICATE-----
-      -----END CERTIFICATE-----
-    key: |-
-      -----BEGIN PRIVATE KEY-----
-      -----END PRIVATE KEY-----
+    certificate: <test>
+    key: <test>
     insecureEdgeTerminationPolicy: Allow
   wildcardPolicy: None
  
