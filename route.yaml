@@ -16,8 +16,9 @@ spec:
     targetPort: 8083
   tls:
     termination: edge
-    certificate: <test>
-    key: <test>
     insecureEdgeTerminationPolicy: Allow
-  wildcardPolicy: None
- 
+    certificate: |
+      <certificate>
+    key: |
+      <key>
+
