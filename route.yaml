@@ -6,7 +6,6 @@ metadata:
   annotations:
     avp.kubernetes.io/path: "kv/data/test"
 spec:
-  host: test.apps.didak6.tbtk.gov.tr
   path: /
   to:
     kind: Service
