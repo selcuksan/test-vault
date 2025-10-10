@@ -4,7 +4,7 @@ metadata:
   name: test
   namespace: altyapi
   annotations:
-    avp.kubernetes.io/path: "certs/wildcard-iskur.gov.tr"
+    avp.kubernetes.io/path: "kv/data/test"
 spec:
   path: /
   to:
