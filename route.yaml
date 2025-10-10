@@ -16,8 +16,5 @@ spec:
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Allow
-    certificate: |
-      <certificate>
-    key: |
-      <key>
+
 
