@@ -3,8 +3,7 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: test
   namespace: altyapi
-  annotations:
-    avp.kubernetes.io/path: "kv/data/test"
+
 spec:
   path: /
   to:
@@ -16,5 +15,7 @@ spec:
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Allow
-
-
+    certificate: |
+      <certificate>
+    key: |
+      <key>
