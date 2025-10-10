@@ -3,7 +3,6 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: test
   namespace: altyapi
-
 spec:
   path: /
   to:
@@ -15,7 +14,4 @@ spec:
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Allow
-    certificate: |
-      <certificate>
-    key: |
-      <key>
+
