@@ -4,7 +4,7 @@ metadata:
   name: test
   namespace: argocd
   annotations:
-    avp.kubernetes.io/path: "kv/data/test"
+    avp.kubernetes.io/path: "kv/data/certs/wildcard-iskur.gov.tr"
 spec:
   path: /
   to:
