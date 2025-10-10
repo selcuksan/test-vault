@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: test
-  namespace: argocd
+  namespace: altyapi
   annotations:
     avp.kubernetes.io/path: "kv/data/certs/wildcard-iskur.gov.tr"
 spec:
